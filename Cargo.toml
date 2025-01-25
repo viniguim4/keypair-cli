@@ -1,0 +1,26 @@
+[package]
+name = "grin_cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+console = "0.15.7"
+dialoguer = "0.10.4"
+indicatif = "0.17.5"
+tokio = { version = "1.14.1"}
+ethers = { version = "2.0.14" }
+eyre = "0.6.8"
+futures = "0.3.28"
+async-recursion = "1.0.4"
+serde = { version = "1.0.193", features = ["derive"] }
+serde_json = "1.0.96"
+
+[dependencies.wllt_gen]
+path = "src/features/wllt_gen"
+version = "0.2.0"
+
+[dependencies.on_chain]
+path = "src/features/on_chain"
+version = "0.1.0"
